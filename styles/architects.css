@@ -65,8 +65,58 @@ nav li a{
     font-size: 20px;
     font-weight: 600;
     cursor: pointer;
+    border: 0;}
+
+
+/* main section styles */
+main{
+    max-width:1440px;
+    margin: 70px auto;
+}
+.team-img-container{
+    display: flex;
+    align-items: center;
+}
+.team-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    gap: 24px;
+}
+.text-container{
+    padding-left: 70px;
+    padding-right:70px ;
+}
+.container{
+    font-size: 45px;
+}
+.quick{
+    color: #727272;
+    font-weight: 500;
+}
+.of-our{
+    font-weight: 700;
+    color: #131313;
+}
+.feature{
+    font-weight: 700;
+    color: #FF900E;;
+}
+.text-praimary{
+    font-size: 16px;
+    font-weight: 400;
+}
+.ttn-primary{
+    
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color:#FF900E;
+    padding: 20px 25px;
+    color: #fff;
+    cursor: pointer;
     border: 0;
 }
+
 
 
 
@@ -92,3 +142,4 @@ nav li a{
         padding: 50px;
 }
 
+}
