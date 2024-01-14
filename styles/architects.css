@@ -116,17 +116,131 @@ main{
     cursor: pointer;
     border: 0;
 }
+/* feature content */
+.feature-content{
+    margin-top: 130px;
+    display: flex;
+    gap: 120px;
+}
+.feature-heading{
+    
+    font-size: 16px;
+    font-weight: 400;
+}
+.feature-content .card-text{
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #FFF;
+    
+    box-shadow: 0px 4px 30px 0px ;
+}
+.feature-content .card{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+    font-size: 45px;
+    font-weight: 700;
+}
+  .yers{
+    border-radius: 8px;
+    background: #FF900E; 
+    width:300px;
+    color: #FFF;
+    padding: 30px;
+    text-align: center;
+  }
+  .yers h2{
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 70px; 
+  }
+  .yers h2 p{
+    font-size: 25px;
+  }
+
+  /* facts style */
+  .header-taitle{
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+  .facts p{
+    font-size: 16px;
+    font-weight: 400
+  }
+  .facts-container .card {
+    border: 2px solid #FF900E;
+    border-radius: 8px;
+    padding: 60px 50px;
+  }
+  .facts-container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .facts-container .card-stats{
+    font-size: 45px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .facts-container .card-title{
+    font-size: 20px;
+    font-weight: 600;
+    
+  }
+   /* Our Sponspors style */
+   .sponspors{
+    text-align: center;
+   }
+
+  .sponspors-img{
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    gap: 40px;
+  }
+  .sponsors-text{
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .ponspors-img img{
+    width: 165px;
+  }
+
+footer{
+    height: 100px;
+    border-radius: 5px;
+    padding-top: 50px;
+    border: 1px solid #FFF4E7;
+    text-align: center;
+    background-color: #FFF4E7;
+    font-size: 20px;
+    font-weight: 400;
+}
 
 
 
 
-/* midia quary */
+
+
+
+
+/* midia quary mobile phone */
 @media screen and (max-width:576px) {
     header{
         padding: 20px;
     }
-    nav{
+    nav,
+     .team-img-container, .facts-container,
+     .sponspors-img, .facts-container{
         flex-direction: column;
+    }
+    .facts-container{
+      gap: 10px;
+    }
+    .team-container{
+        grid-template-columns: 1fr;
     }
     
 }
@@ -134,7 +248,7 @@ main{
 /* midium divice */
 @media screen and (min-width:576px) and (max-width: 960px) {
     
-    nav{
+    nav, .text-container{
         flex-direction: column;
     }
     
